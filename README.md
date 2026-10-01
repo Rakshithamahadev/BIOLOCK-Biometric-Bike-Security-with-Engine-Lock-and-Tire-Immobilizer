@@ -12,30 +12,3 @@
 🛡️ Fail-safe locking during power failure
 👤 Admin mode for fingerprint management
 
-**Working**
-When the system is powered on, it waits for a fingerprint. If the fingerprint matches an authorized user, the servo unlocks and the relay enables the vehicle motor. If an unknown fingerprint is detected, the vehicle remains locked, the buzzer is activated, and an SMS and phone call are sent to the owner through the GSM module.
-
-**Hardware Used**
-ESP32
-Fingerprint Sensor (R307/FPM10A or similar)
-SIM900/SIM900A GSM Module
-Servo Motor
-Relay Module
-16×2 I2C LCD
-Buzzer
-DC Motor
-12V Power Supply
-Buck Converter
-Breadboard and jumper wires
-
-**Software & Technologies**
-Arduino IDE
-Embedded C/C++
-ESP32
-Adafruit Fingerprint Library
-ESP32Servo Library
-GSM AT Commands
-Blynk IoT
-
-**Project Goal**
-The main goal of this project is to provide multi-layer vehicle security by combining biometric authentication, electronic engine immobilization, mechanical locking, and real-time owner alerts.
